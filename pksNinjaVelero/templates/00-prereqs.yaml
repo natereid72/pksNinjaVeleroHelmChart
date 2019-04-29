@@ -37,7 +37,7 @@ metadata:
   name: schedules.velero.io
   annotations:
     "helm.sh/hook": crd-install
-    "helm.sh/hook-delete-policy": hook-succeeded,hook-failed
+    "helm.sh/hook-delete-policy": before-hook-creation
   labels:
     component: velero
 spec:
@@ -55,7 +55,7 @@ metadata:
   name: restores.velero.io
   annotations:
     "helm.sh/hook": crd-install
-    "helm.sh/hook-delete-policy": hook-succeeded,hook-failed
+    "helm.sh/hook-delete-policy": before-hook-creation
   labels:
     component: velero
 spec:
@@ -73,7 +73,7 @@ metadata:
   name: downloadrequests.velero.io
   annotations:
     "helm.sh/hook": crd-install
-    "helm.sh/hook-delete-policy": hook-succeeded,hook-failed
+    "helm.sh/hook-delete-policy": before-hook-creation
   labels:
     component: velero
 spec:
@@ -91,7 +91,7 @@ metadata:
   name: deletebackuprequests.velero.io
   annotations:
     "helm.sh/hook": crd-install
-    "helm.sh/hook-delete-policy": hook-succeeded,hook-failed
+    "helm.sh/hook-delete-policy": before-hook-creation
   labels:
     component: velero
 spec:
@@ -109,7 +109,7 @@ metadata:
   name: podvolumebackups.velero.io
   annotations:
     "helm.sh/hook": crd-install
-    "helm.sh/hook-delete-policy": hook-succeeded,hook-failed
+    "helm.sh/hook-delete-policy": before-hook-creation
   labels:
     component: velero
 spec:
@@ -127,7 +127,7 @@ metadata:
   name: podvolumerestores.velero.io
   annotations:
     "helm.sh/hook": crd-install
-    "helm.sh/hook-delete-policy": hook-succeeded,hook-failed
+    "helm.sh/hook-delete-policy": before-hook-creation
   labels:
     component: velero
 spec:
@@ -145,7 +145,7 @@ metadata:
   name: resticrepositories.velero.io
   annotations:
     "helm.sh/hook": crd-install
-    "helm.sh/hook-delete-policy": hook-succeeded,hook-failed
+    "helm.sh/hook-delete-policy": before-hook-creation
   labels:
     component: velero
 spec:
@@ -181,7 +181,7 @@ metadata:
   name: volumesnapshotlocations.velero.io
   annotations:
     "helm.sh/hook": crd-install
-    "helm.sh/hook-delete-policy": hook-succeeded,hook-failed
+    "helm.sh/hook-delete-policy": before-hook-creation
   labels:
     component: velero
 spec:
@@ -199,7 +199,7 @@ metadata:
   name: serverstatusrequests.velero.io
   annotations:
     "helm.sh/hook": crd-install
-    "helm.sh/hook-delete-policy": hook-succeeded,hook-failed
+    "helm.sh/hook-delete-policy": before-hook-creation
   labels:
     component: velero
 spec:
@@ -209,6 +209,7 @@ spec:
   names:
     plural: serverstatusrequests
     kind: ServerStatusRequest
+
 ---
 apiVersion: v1
 kind: Namespace
