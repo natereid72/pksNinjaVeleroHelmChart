@@ -16,7 +16,7 @@
 apiVersion: velero.io/v1
 kind: BackupStorageLocation
 metadata:
-  name: {{ .Release.Name }}-inst
+  name: default
   namespace: velero
 spec:
   provider: aws
