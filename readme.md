@@ -1,4 +1,4 @@
-# Helm chart to install Velero server components in the VMware PKS Ninja lab envrionment.
+# Helm chart to install Velero server components in the VMware PKS Ninja lab environment.
 
 ### Note: Due to limitations of cleaning up CRDs in current Helm versions, you will need to manually delete the CRDs created by this installation before running the chart again, beyond the initial run.
 
