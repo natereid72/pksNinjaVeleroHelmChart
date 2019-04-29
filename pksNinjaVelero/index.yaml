@@ -3,11 +3,11 @@ entries:
   pksNinjaVelero:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-04-29T10:38:48.216538992-07:00
-    description: A Helm chart for Kubernetes
-    digest: 6e4a480ad64d0ed7211ed9e11db312e31297e46c16745ebcbbed8ea3064be019
+    created: 2019-04-29T11:25:48.589705907-07:00
+    description: A Helm chart for Velero in the PKS Ninja Lab
+    digest: 9a2ee6feb5c3ae1f2868dbfa6985587fd8733a4ba8810dc0430c3c64710f0462
     name: pksNinjaVelero
     urls:
-    - pksNinjaVelero-0.1.0.tgz
-    version: 0.1.0
-generated: 2019-04-29T10:38:48.215568178-07:00
+    - pksNinjaVelero-1.0.0.tgz
+    version: 1.0.0
+generated: 2019-04-29T11:25:48.589008612-07:00
