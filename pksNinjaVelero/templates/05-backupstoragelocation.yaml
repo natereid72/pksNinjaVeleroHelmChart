@@ -16,7 +16,7 @@
 apiVersion: velero.io/v1
 kind: BackupStorageLocation
 metadata:
-  name: {{ .Release.Name }}-inst #default
+  name: default
   namespace: velero
 spec:
   provider: aws
@@ -28,6 +28,6 @@ spec:
     s3Url: http://minio.velero.svc:9000
     # Uncomment the following line and provide the value of an externally
     # available URL for downloading logs, running Velero describe, and more.
-    publicUrl: http://minio.ing.corp.local:9000
+    publicUrl: http://minio.ing.corp.local:80
     
 
