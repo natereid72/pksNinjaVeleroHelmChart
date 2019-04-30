@@ -4,7 +4,7 @@ Note: Due to limitations of cleaning up CRDs in current Helm versions, you will 
 
 Minio S3 appliance is installed and exposed via ingress at http://minio.ing.corp.local with username admin and password VMware1!
 
-You will need to download and untar the client-side CLI tool from the Velero repo. Intro to Velero lab guide has directions for this.
+You will need to download and untar the client-side CLI tool from the Velero repo. Intro to Velero lab guide has directions for this. https://github.com/CNA-Tech/PKS-Ninja/tree/master/LabGuides/PKSBackupVelero-PV3774
 
 #### Directions: Once you have a cluster deployed and have configured Helm (see Intro to Helm lab guide), execute the following:
 ```
